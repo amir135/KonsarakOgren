@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/ereceiptuidbserve1/databases/newdb1",
+      "type": "mssql.azure",
+      "connectionId": "DBContext",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}

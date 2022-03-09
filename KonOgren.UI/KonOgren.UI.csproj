@@ -1,0 +1,362 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>KonOgren.UI</RootNamespace>
+    <UserSecretsId>e9c727f1-eee2-47a4-8e6f-abec15332abf</UserSecretsId>
+	  <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="bundleconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bundleconfig.json" />
+    <None Include="wwwroot\assets\flags\ad.svg" />
+    <None Include="wwwroot\assets\flags\ae.svg" />
+    <None Include="wwwroot\assets\flags\af.svg" />
+    <None Include="wwwroot\assets\flags\ag.svg" />
+    <None Include="wwwroot\assets\flags\ai.svg" />
+    <None Include="wwwroot\assets\flags\al.svg" />
+    <None Include="wwwroot\assets\flags\am.svg" />
+    <None Include="wwwroot\assets\flags\ao.svg" />
+    <None Include="wwwroot\assets\flags\ar.svg" />
+    <None Include="wwwroot\assets\flags\as.svg" />
+    <None Include="wwwroot\assets\flags\at.svg" />
+    <None Include="wwwroot\assets\flags\au.svg" />
+    <None Include="wwwroot\assets\flags\aw.svg" />
+    <None Include="wwwroot\assets\flags\ax.svg" />
+    <None Include="wwwroot\assets\flags\az.svg" />
+    <None Include="wwwroot\assets\flags\ba.svg" />
+    <None Include="wwwroot\assets\flags\bb.svg" />
+    <None Include="wwwroot\assets\flags\bd.svg" />
+    <None Include="wwwroot\assets\flags\be.svg" />
+    <None Include="wwwroot\assets\flags\bf.svg" />
+    <None Include="wwwroot\assets\flags\bg.svg" />
+    <None Include="wwwroot\assets\flags\bh.svg" />
+    <None Include="wwwroot\assets\flags\bi.svg" />
+    <None Include="wwwroot\assets\flags\bj.svg" />
+    <None Include="wwwroot\assets\flags\bl.svg" />
+    <None Include="wwwroot\assets\flags\bm.svg" />
+    <None Include="wwwroot\assets\flags\bn.svg" />
+    <None Include="wwwroot\assets\flags\bo.svg" />
+    <None Include="wwwroot\assets\flags\bq-bo.svg" />
+    <None Include="wwwroot\assets\flags\bq-sa.svg" />
+    <None Include="wwwroot\assets\flags\bq-se.svg" />
+    <None Include="wwwroot\assets\flags\br.svg" />
+    <None Include="wwwroot\assets\flags\bs.svg" />
+    <None Include="wwwroot\assets\flags\bt.svg" />
+    <None Include="wwwroot\assets\flags\bw.svg" />
+    <None Include="wwwroot\assets\flags\by.svg" />
+    <None Include="wwwroot\assets\flags\bz.svg" />
+    <None Include="wwwroot\assets\flags\ca-bc.svg" />
+    <None Include="wwwroot\assets\flags\ca.svg" />
+    <None Include="wwwroot\assets\flags\cc.svg" />
+    <None Include="wwwroot\assets\flags\cd.svg" />
+    <None Include="wwwroot\assets\flags\cf.svg" />
+    <None Include="wwwroot\assets\flags\cg.svg" />
+    <None Include="wwwroot\assets\flags\ch.svg" />
+    <None Include="wwwroot\assets\flags\ci.svg" />
+    <None Include="wwwroot\assets\flags\ck.svg" />
+    <None Include="wwwroot\assets\flags\cl.svg" />
+    <None Include="wwwroot\assets\flags\cm.svg" />
+    <None Include="wwwroot\assets\flags\cn.svg" />
+    <None Include="wwwroot\assets\flags\co.svg" />
+    <None Include="wwwroot\assets\flags\cr.svg" />
+    <None Include="wwwroot\assets\flags\cu.svg" />
+    <None Include="wwwroot\assets\flags\cv.svg" />
+    <None Include="wwwroot\assets\flags\cw.svg" />
+    <None Include="wwwroot\assets\flags\cx.svg" />
+    <None Include="wwwroot\assets\flags\cy.svg" />
+    <None Include="wwwroot\assets\flags\cz.svg" />
+    <None Include="wwwroot\assets\flags\de.svg" />
+    <None Include="wwwroot\assets\flags\dj.svg" />
+    <None Include="wwwroot\assets\flags\dk.svg" />
+    <None Include="wwwroot\assets\flags\dm.svg" />
+    <None Include="wwwroot\assets\flags\do.svg" />
+    <None Include="wwwroot\assets\flags\dz.svg" />
+    <None Include="wwwroot\assets\flags\easter_island.svg" />
+    <None Include="wwwroot\assets\flags\ec-w.svg" />
+    <None Include="wwwroot\assets\flags\ec.svg" />
+    <None Include="wwwroot\assets\flags\ee.svg" />
+    <None Include="wwwroot\assets\flags\eg.svg" />
+    <None Include="wwwroot\assets\flags\eh.svg" />
+    <None Include="wwwroot\assets\flags\er.svg" />
+    <None Include="wwwroot\assets\flags\es-ce.svg" />
+    <None Include="wwwroot\assets\flags\es-cn.svg" />
+    <None Include="wwwroot\assets\flags\es-ga.svg" />
+    <None Include="wwwroot\assets\flags\es-ib.svg" />
+    <None Include="wwwroot\assets\flags\es-ml.svg" />
+    <None Include="wwwroot\assets\flags\es-pv.svg" />
+    <None Include="wwwroot\assets\flags\es.svg" />
+    <None Include="wwwroot\assets\flags\esperanto.svg" />
+    <None Include="wwwroot\assets\flags\et.svg" />
+    <None Include="wwwroot\assets\flags\european_union.svg" />
+    <None Include="wwwroot\assets\flags\fi.svg" />
+    <None Include="wwwroot\assets\flags\fj.svg" />
+    <None Include="wwwroot\assets\flags\fk.svg" />
+    <None Include="wwwroot\assets\flags\fm.svg" />
+    <None Include="wwwroot\assets\flags\fo.svg" />
+    <None Include="wwwroot\assets\flags\fr-h.svg" />
+    <None Include="wwwroot\assets\flags\fr.svg" />
+    <None Include="wwwroot\assets\flags\ga.svg" />
+    <None Include="wwwroot\assets\flags\gb-eng.svg" />
+    <None Include="wwwroot\assets\flags\gb-ork.svg" />
+    <None Include="wwwroot\assets\flags\gb-sct.svg" />
+    <None Include="wwwroot\assets\flags\gb-wls.svg" />
+    <None Include="wwwroot\assets\flags\gb.svg" />
+    <None Include="wwwroot\assets\flags\gd.svg" />
+    <None Include="wwwroot\assets\flags\ge-ab.svg" />
+    <None Include="wwwroot\assets\flags\ge.svg" />
+    <None Include="wwwroot\assets\flags\gf.svg" />
+    <None Include="wwwroot\assets\flags\gg.svg" />
+    <None Include="wwwroot\assets\flags\gh.svg" />
+    <None Include="wwwroot\assets\flags\gi.svg" />
+    <None Include="wwwroot\assets\flags\gl.svg" />
+    <None Include="wwwroot\assets\flags\gm.svg" />
+    <None Include="wwwroot\assets\flags\gn.svg" />
+    <None Include="wwwroot\assets\flags\gq.svg" />
+    <None Include="wwwroot\assets\flags\gr.svg" />
+    <None Include="wwwroot\assets\flags\gt.svg" />
+    <None Include="wwwroot\assets\flags\gu.svg" />
+    <None Include="wwwroot\assets\flags\gw.svg" />
+    <None Include="wwwroot\assets\flags\gy.svg" />
+    <None Include="wwwroot\assets\flags\hausa.svg" />
+    <None Include="wwwroot\assets\flags\hk.svg" />
+    <None Include="wwwroot\assets\flags\hmong.svg" />
+    <None Include="wwwroot\assets\flags\hn.svg" />
+    <None Include="wwwroot\assets\flags\hr.svg" />
+    <None Include="wwwroot\assets\flags\ht.svg" />
+    <None Include="wwwroot\assets\flags\hu.svg" />
+    <None Include="wwwroot\assets\flags\id.svg" />
+    <None Include="wwwroot\assets\flags\ie.svg" />
+    <None Include="wwwroot\assets\flags\il.svg" />
+    <None Include="wwwroot\assets\flags\im.svg" />
+    <None Include="wwwroot\assets\flags\in.svg" />
+    <None Include="wwwroot\assets\flags\io.svg" />
+    <None Include="wwwroot\assets\flags\iq.svg" />
+    <None Include="wwwroot\assets\flags\ir.svg" />
+    <None Include="wwwroot\assets\flags\is.svg" />
+    <None Include="wwwroot\assets\flags\it-82.svg" />
+    <None Include="wwwroot\assets\flags\it-88.svg" />
+    <None Include="wwwroot\assets\flags\it.svg" />
+    <None Include="wwwroot\assets\flags\je.svg" />
+    <None Include="wwwroot\assets\flags\jm.svg" />
+    <None Include="wwwroot\assets\flags\jo.svg" />
+    <None Include="wwwroot\assets\flags\jp.svg" />
+    <None Include="wwwroot\assets\flags\kannada.svg" />
+    <None Include="wwwroot\assets\flags\ke.svg" />
+    <None Include="wwwroot\assets\flags\kg.svg" />
+    <None Include="wwwroot\assets\flags\kh.svg" />
+    <None Include="wwwroot\assets\flags\ki.svg" />
+    <None Include="wwwroot\assets\flags\km.svg" />
+    <None Include="wwwroot\assets\flags\kn.svg" />
+    <None Include="wwwroot\assets\flags\kp.svg" />
+    <None Include="wwwroot\assets\flags\kr.svg" />
+    <None Include="wwwroot\assets\flags\kurdistan.svg" />
+    <None Include="wwwroot\assets\flags\kw.svg" />
+    <None Include="wwwroot\assets\flags\ky.svg" />
+    <None Include="wwwroot\assets\flags\kz.svg" />
+    <None Include="wwwroot\assets\flags\la.svg" />
+    <None Include="wwwroot\assets\flags\lb.svg" />
+    <None Include="wwwroot\assets\flags\lc.svg" />
+    <None Include="wwwroot\assets\flags\li.svg" />
+    <None Include="wwwroot\assets\flags\lk.svg" />
+    <None Include="wwwroot\assets\flags\lr.svg" />
+    <None Include="wwwroot\assets\flags\ls.svg" />
+    <None Include="wwwroot\assets\flags\lt.svg" />
+    <None Include="wwwroot\assets\flags\lu.svg" />
+    <None Include="wwwroot\assets\flags\lv.svg" />
+    <None Include="wwwroot\assets\flags\ly.svg" />
+    <None Include="wwwroot\assets\flags\ma.svg" />
+    <None Include="wwwroot\assets\flags\malayali.svg" />
+    <None Include="wwwroot\assets\flags\maori.svg" />
+    <None Include="wwwroot\assets\flags\mc.svg" />
+    <None Include="wwwroot\assets\flags\md.svg" />
+    <None Include="wwwroot\assets\flags\me.svg" />
+    <None Include="wwwroot\assets\flags\mg.svg" />
+    <None Include="wwwroot\assets\flags\mh.svg" />
+    <None Include="wwwroot\assets\flags\mk.svg" />
+    <None Include="wwwroot\assets\flags\ml.svg" />
+    <None Include="wwwroot\assets\flags\mm.svg" />
+    <None Include="wwwroot\assets\flags\mn.svg" />
+    <None Include="wwwroot\assets\flags\mo.svg" />
+    <None Include="wwwroot\assets\flags\mp.svg" />
+    <None Include="wwwroot\assets\flags\mq.svg" />
+    <None Include="wwwroot\assets\flags\mr.svg" />
+    <None Include="wwwroot\assets\flags\ms.svg" />
+    <None Include="wwwroot\assets\flags\mt.svg" />
+    <None Include="wwwroot\assets\flags\mu.svg" />
+    <None Include="wwwroot\assets\flags\mv.svg" />
+    <None Include="wwwroot\assets\flags\mw.svg" />
+    <None Include="wwwroot\assets\flags\mx.svg" />
+    <None Include="wwwroot\assets\flags\my.svg" />
+    <None Include="wwwroot\assets\flags\mz.svg" />
+    <None Include="wwwroot\assets\flags\na.svg" />
+    <None Include="wwwroot\assets\flags\nato.svg" />
+    <None Include="wwwroot\assets\flags\ne.svg" />
+    <None Include="wwwroot\assets\flags\nf.svg" />
+    <None Include="wwwroot\assets\flags\ng.svg" />
+    <None Include="wwwroot\assets\flags\ni.svg" />
+    <None Include="wwwroot\assets\flags\nl.svg" />
+    <None Include="wwwroot\assets\flags\no.svg" />
+    <None Include="wwwroot\assets\flags\northern_cyprus.svg" />
+    <None Include="wwwroot\assets\flags\np.svg" />
+    <None Include="wwwroot\assets\flags\nr.svg" />
+    <None Include="wwwroot\assets\flags\nu.svg" />
+    <None Include="wwwroot\assets\flags\nz.svg" />
+    <None Include="wwwroot\assets\flags\om.svg" />
+    <None Include="wwwroot\assets\flags\pa.svg" />
+    <None Include="wwwroot\assets\flags\pe.svg" />
+    <None Include="wwwroot\assets\flags\pf.svg" />
+    <None Include="wwwroot\assets\flags\pg.svg" />
+    <None Include="wwwroot\assets\flags\ph.svg" />
+    <None Include="wwwroot\assets\flags\pk.svg" />
+    <None Include="wwwroot\assets\flags\pl.svg" />
+    <None Include="wwwroot\assets\flags\pn.svg" />
+    <None Include="wwwroot\assets\flags\pr.svg" />
+    <None Include="wwwroot\assets\flags\ps.svg" />
+    <None Include="wwwroot\assets\flags\pt-20.svg" />
+    <None Include="wwwroot\assets\flags\pt-30.svg" />
+    <None Include="wwwroot\assets\flags\pt.svg" />
+    <None Include="wwwroot\assets\flags\pw.svg" />
+    <None Include="wwwroot\assets\flags\py.svg" />
+    <None Include="wwwroot\assets\flags\qa.svg" />
+    <None Include="wwwroot\assets\flags\ro.svg" />
+    <None Include="wwwroot\assets\flags\rs.svg" />
+    <None Include="wwwroot\assets\flags\ru.svg" />
+    <None Include="wwwroot\assets\flags\rw.svg" />
+    <None Include="wwwroot\assets\flags\sa.svg" />
+    <None Include="wwwroot\assets\flags\sb.svg" />
+    <None Include="wwwroot\assets\flags\sc.svg" />
+    <None Include="wwwroot\assets\flags\sd.svg" />
+    <None Include="wwwroot\assets\flags\se.svg" />
+    <None Include="wwwroot\assets\flags\sg.svg" />
+    <None Include="wwwroot\assets\flags\si.svg" />
+    <None Include="wwwroot\assets\flags\sindh.svg" />
+    <None Include="wwwroot\assets\flags\sk.svg" />
+    <None Include="wwwroot\assets\flags\sl.svg" />
+    <None Include="wwwroot\assets\flags\sm.svg" />
+    <None Include="wwwroot\assets\flags\sn.svg" />
+    <None Include="wwwroot\assets\flags\so.svg" />
+    <None Include="wwwroot\assets\flags\somaliland.svg" />
+    <None Include="wwwroot\assets\flags\south_ossetia.svg" />
+    <None Include="wwwroot\assets\flags\sr.svg" />
+    <None Include="wwwroot\assets\flags\ss.svg" />
+    <None Include="wwwroot\assets\flags\st.svg" />
+    <None Include="wwwroot\assets\flags\sv.svg" />
+    <None Include="wwwroot\assets\flags\sx.svg" />
+    <None Include="wwwroot\assets\flags\sy.svg" />
+    <None Include="wwwroot\assets\flags\sz.svg" />
+    <None Include="wwwroot\assets\flags\tc.svg" />
+    <None Include="wwwroot\assets\flags\td.svg" />
+    <None Include="wwwroot\assets\flags\tg.svg" />
+    <None Include="wwwroot\assets\flags\th.svg" />
+    <None Include="wwwroot\assets\flags\tibet.svg" />
+    <None Include="wwwroot\assets\flags\tj.svg" />
+    <None Include="wwwroot\assets\flags\tk.svg" />
+    <None Include="wwwroot\assets\flags\tl.svg" />
+    <None Include="wwwroot\assets\flags\tm.svg" />
+    <None Include="wwwroot\assets\flags\tn.svg" />
+    <None Include="wwwroot\assets\flags\to.svg" />
+    <None Include="wwwroot\assets\flags\tr.svg" />
+    <None Include="wwwroot\assets\flags\transnistria.svg" />
+    <None Include="wwwroot\assets\flags\tt.svg" />
+    <None Include="wwwroot\assets\flags\tv.svg" />
+    <None Include="wwwroot\assets\flags\tw.svg" />
+    <None Include="wwwroot\assets\flags\tz.svg" />
+    <None Include="wwwroot\assets\flags\ua.svg" />
+    <None Include="wwwroot\assets\flags\ug.svg" />
+    <None Include="wwwroot\assets\flags\united_nations.svg" />
+    <None Include="wwwroot\assets\flags\us-hi.svg" />
+    <None Include="wwwroot\assets\flags\us.svg" />
+    <None Include="wwwroot\assets\flags\uy.svg" />
+    <None Include="wwwroot\assets\flags\uz.svg" />
+    <None Include="wwwroot\assets\flags\va.svg" />
+    <None Include="wwwroot\assets\flags\vc.svg" />
+    <None Include="wwwroot\assets\flags\ve.svg" />
+    <None Include="wwwroot\assets\flags\vg.svg" />
+    <None Include="wwwroot\assets\flags\vi.svg" />
+    <None Include="wwwroot\assets\flags\vn.svg" />
+    <None Include="wwwroot\assets\flags\vu.svg" />
+    <None Include="wwwroot\assets\flags\ws.svg" />
+    <None Include="wwwroot\assets\flags\xk.svg" />
+    <None Include="wwwroot\assets\flags\xx.svg" />
+    <None Include="wwwroot\assets\flags\ye.svg" />
+    <None Include="wwwroot\assets\flags\yiddish.svg" />
+    <None Include="wwwroot\assets\flags\za.svg" />
+    <None Include="wwwroot\assets\flags\zm.svg" />
+    <None Include="wwwroot\assets\flags\zw.svg" />
+    <None Include="wwwroot\usertemplate\1123285727682531" />
+    <None Include="wwwroot\usertemplate\analytics.js.download" />
+    <None Include="wwwroot\usertemplate\bootstrap.min.js.download" />
+    <None Include="wwwroot\usertemplate\data-tables.bootstrap4.min.js.download" />
+    <None Include="wwwroot\usertemplate\fbevents.js.download" />
+    <None Include="wwwroot\usertemplate\gtm.js.download" />
+    <None Include="wwwroot\usertemplate\jquery.data-tables.min.js.download" />
+    <None Include="wwwroot\usertemplate\jquery.min.js.download" />
+    <None Include="wwwroot\usertemplate\jquery.touch-swipe.min.js.download" />
+    <None Include="wwwroot\usertemplate\popper.min.js.download" />
+    <None Include="wwwroot\usertemplate\script.js.download" />
+    <None Include="wwwroot\usertemplate\script.min.js.download" />
+    <None Include="wwwroot\usertemplate\smooth-scroll.js.download" />
+    <None Include="wwwroot\usertemplate\tether.min.js.download" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.1.0" />
+    <PackageReference Include="Autofac.Configuration" Version="6.0.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.2.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.42" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="3.1.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="3.1.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="3.1.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Twitter" Version="3.1.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Identity.Web" Version="1.4.1" />
+    <PackageReference Include="Microsoft.Identity.Web.UI" Version="1.4.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="RestSharp" Version="106.11.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="5.6.3" />
+    <PackageReference Include="System.IO.Compression" Version="4.3.0" />
+    <PackageReference Include="System.ServiceModel.Syndication" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KonOgren.DataAccess\KonOgren.DataAccess.csproj" />
+    <ProjectReference Include="..\KonOgren.Infrastructure\KonOgren.Infrastructure.csproj" />
+    <ProjectReference Include="..\KonOgren.Services\KonOgren.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extension\" />
+    <Folder Include="Properties\ServiceDependencies\" />
+  </ItemGroup>
+
+
+
+</Project>

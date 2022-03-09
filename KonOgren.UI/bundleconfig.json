@@ -1,0 +1,44 @@
+[
+  {
+    "outputFileName": "wwwroot/css/site.min.css",
+    "inputFiles": [
+      "wwwroot/css/site.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/assets/css/style.min.css",
+    "inputFiles": [
+      "wwwroot/assets/css/style.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/assets/js/jquery.blockUI.min.js",
+    "inputFiles": [
+      "wwwroot/assets/js/jquery.blockUI.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/assets/js/main.min.js",
+    "inputFiles": [
+      "wwwroot/assets/js/main.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/admin/daterangepicker/daterangepicker.min.js",
+    "inputFiles": [
+      "wwwroot/admin/daterangepicker/daterangepicker.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/Home.MyAccount.min.js",
+    "inputFiles": [
+      "wwwroot/js/Home.MyAccount.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/Home.Index.min.js",
+    "inputFiles": [
+      "wwwroot/js/Home.Index.js"
+    ]
+  }
+]

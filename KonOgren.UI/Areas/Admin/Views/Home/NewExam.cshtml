@@ -1,0 +1,337 @@
+﻿@model List<KonOgren.Infrastructure.ViewModel.FeedViewModel>
+@{ 
+    ViewData["Title"] = "Yeni Sınav";
+    Layout = "~/Areas/Admin/Views/Shared/_layout.cshtml";
+}
+<div class="card" style="margin:10px">
+    <div class="card-header">
+        <h3 class="card-title">Yeni Sınav</h3>
+    </div>
+    <div class="card-body p-0" style="margin-inline:50px">
+        <div class="row">
+            <div class="col-12" style="margin:10px">
+                <select class="form-control" id="cmbtitle" style="width:98%">
+                    <option value="">Bir başlık seçiniz</option>
+
+                    @foreach (var item in Model)
+                    {
+                        <option value="@item.Link">@item.Title</option>
+                    }
+
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <textarea class="form-control" rows="8" id="txtBody" style="margin: 10px; width: 98%"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12">
+                <input class="form-control" type="text" placeholder="Soru 1" id="Q1" style="margin: 10px; width: 98%" />
+
+            </div>
+            <table class="table  table-borderless ">
+                <tr>
+                    <td><div class="row"> A) <input class="form-control" type="text" id="Q1A" style="width:90%"></div></td>
+                    <td><div class="row">B)<input class="form-control" type="text" id="Q1B" style="width:90%"></div></td>
+                </tr>
+                <tr>
+                    <td><div class="row">C)<input class="form-control" type="text" id="Q1C" style="width:90%"></div></td>
+                    <td><div class="row">D)<input class="form-control" type="text" id="Q1D" style="width:90%"></div></td>
+                </tr>
+            </table>
+            <div class="col-12" align="center">
+                <select class="form-control" id="Q1Answer" style="width:40%">
+                    <option value="" selected>Doğru cevap seç</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                    <option value="4">D</option>
+                </select>
+            </div>
+        </div> <hr />
+
+
+        <div class="row">
+
+            <div class="col-12">
+                <input class="form-control" type="text" placeholder="Soru 2" id="Q2" style="margin: 10px; width: 98%" />
+
+            </div>
+            <table class="table  table-borderless">
+                <tr>
+                    <td><div class="row"> A) <input class="form-control" type="text" id="Q2A" style="width:90%"></div></td>
+                    <td><div class="row">B)<input class="form-control" type="text" id="Q2B" style="width:90%"></div></td>
+                </tr>
+                <tr>
+                    <td><div class="row">C)<input class="form-control" type="text" id="Q2C" style="width:90%"></div></td>
+                    <td><div class="row">D)<input class="form-control" type="text" id="Q2D" style="width:90%"></div></td>
+                </tr>
+            </table>
+            <div class="col-12" align="center">
+                <select class="form-control" id="Q2Answer" style="width:40%">
+                    <option value="" selected>Doğru cevap seç</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                    <option value="4">D</option>
+                </select>
+            </div>
+        </div> <hr />
+
+
+        <div class="row">
+
+            <div class="col-12">
+                <input class="form-control" type="text" placeholder="Soru 3" id="Q3" style="margin: 10px; width: 98%" />
+
+            </div>
+            <table class="table  table-borderless">
+                <tr>
+                    <td><div class="row"> A) <input class="form-control" type="text" id="Q3A" style="width:90%"></div></td>
+                    <td><div class="row">B)<input class="form-control" type="text" id="Q3B" style="width:90%"></div></td>
+                </tr>
+                <tr>
+                    <td><div class="row">C)<input class="form-control" type="text" id="Q3C" style="width:90%"></div></td>
+                    <td><div class="row">D)<input class="form-control" type="text" id="Q3D" style="width:90%"></div></td>
+                </tr>
+            </table>
+            <div class="col-12" align="center">
+                <select class="form-control" id="Q3Answer" style="width:40%">
+                    <option value="" selected>Doğru cevap seç</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                    <option value="4">D</option>
+                </select>
+            </div>
+        </div> <hr />
+
+
+        <div class="row">
+
+            <div class="col-12">
+                <input class="form-control" type="text" placeholder="Soru 3" id="Q4" style="margin: 10px; width: 98%" />
+
+            </div>
+            <table class="table  table-borderless">
+                <tr>
+                    <td><div class="row"> A) <input class="form-control" type="text" id="Q4A" style="width:90%"></div></td>
+                    <td><div class="row">B)<input class="form-control" type="text" id="Q4B" style="width:90%"></div></td>
+                </tr>
+                <tr>
+                    <td><div class="row">C)<input class="form-control" type="text" id="Q4C" style="width:90%"></div></td>
+                    <td><div class="row">D)<input class="form-control" type="text" id="Q4D" style="width:90%"></div></td>
+                </tr>
+            </table>
+            <div class="col-12" align="center">
+                <select class="form-control" id="Q4Answer" style="width:40%">
+                    <option value="" selected>Doğru cevap seç</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                    <option value="4">D</option>
+                </select>
+            </div>
+        </div>
+        <hr />
+        <div class="row" ><div class="col-12" align="center"><button class="btn btn-primary" onclick="AddExam()">Sınav Oluştur</button></div></div><br/>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#cmbtitle').on('change', function (e) {
+            onTitleSelect(e);
+        });
+    });
+    function onTitleSelect(e) {
+        console.log(e.target.value);
+        /*$.get(e.target.value, function (data) {
+            console.log(data);
+        });*/
+
+        $.ajax({
+            type: 'GET',
+            crossDomain: true,
+            url: "@Url.Action("GetUrlContent", "Home")?url=" + e.target.value,
+            success: function (jsondata) {
+                if (jsondata.success) {
+                    $('#txtBody').val(jsondata.data);
+                }
+                else {
+                    //todo error
+                }
+            }
+        })
+    }
+    function AddExam() {
+        var title = $('#cmbtitle option:selected').text();
+        if (isNullOrEmpty(title)) {
+            //todo message
+            return;
+        }
+        var body = $('#txtBody').val();
+        if (isNullOrEmpty(body)) {
+            //todo message
+            return;
+        }
+        var Q1A = $('#Q1A').val();
+        if (isNullOrEmpty(Q1A)) {
+            //todo message
+            return;
+        }
+        var Q1B = $('#Q1B').val();
+        if (isNullOrEmpty(Q1B)) {
+            //todo message
+            return;
+        }
+        var Q1C = $('#Q1C').val();
+        if (isNullOrEmpty(Q1C)) {
+            //todo message
+            return;
+        }
+        var Q1D = $('#Q1D').val();
+        if (isNullOrEmpty(Q1D)) {
+            //todo message
+            return;
+        }
+        var Q1Answer = $('#Q1Answer').val();
+        if (isNullOrEmpty(Q1Answer)) {
+            //todo message
+            return;
+        }
+        var Q2A = $('#Q2A').val();
+        if (isNullOrEmpty(Q2A)) {
+            //todo message
+            return;
+        }
+        var Q2B = $('#Q2B').val();
+        if (isNullOrEmpty(Q2B )) {
+            //todo message
+            return;
+        }
+        var Q2C = $('#Q2C').val();
+        if (isNullOrEmpty(Q2C)) {
+            //todo message
+            return;
+        }
+        var Q2D = $('#Q2D').val();
+        if (isNullOrEmpty(Q2D )) {
+            //todo message
+            return;
+        }
+        var Q2Answer = $('#Q2Answer').val();
+        if (isNullOrEmpty(Q2Answer)) {
+            //todo message
+            return;
+        }
+
+        var Q3A = $('#Q3A').val();
+        if (isNullOrEmpty(Q3A)) {
+            //todo message
+            return;
+        }
+        var Q3B = $('#Q3B').val();
+        if (isNullOrEmpty(Q3B )) {
+            //todo message
+            return;
+        }
+        var Q3C = $('#Q3C').val();
+        if (isNullOrEmpty(Q3C )) {
+            //todo message
+            return;
+        }
+        var Q3D = $('#Q3D').val();
+        if (isNullOrEmpty(Q3D )) {
+            //todo message
+            return;
+        }
+        var Q3Answer = $('#Q3Answer').val();
+        if (isNullOrEmpty(Q3Answer )) {
+            //todo message
+            return;
+        }
+
+        var Q4A = $('#Q4A').val();
+        if (isNullOrEmpty(Q4A)) {
+            //todo message
+            return;
+        }
+        var Q4B = $('#Q4B').val();
+        if (isNullOrEmpty(Q4B)) {
+            //todo message
+            return;
+        }
+        var Q4C = $('#Q4D').val();
+        if (isNullOrEmpty(Q4C)) {
+            //todo message
+            return;
+        }
+        var Q4D = $('#Q4C').val();
+        if (isNullOrEmpty(Q4D )) {
+            //todo message
+            return;
+        }
+        var Q4Answer = $('#Q4Answer').val();
+        if (isNullOrEmpty( Q4Answer)) {
+            //todo message
+            return;
+        }
+        var Q1 = $('#Q1').val();
+        if (isNullOrEmpty(Q1)) {
+            //todo message
+            return;
+        }
+        var Q4 = $('#Q4').val();
+        if (isNullOrEmpty(Q4)) {
+            //todo message
+            return;
+        }
+        var Q3 = $('#Q3').val();
+        if (isNullOrEmpty(Q3)) {
+            //todo message
+            return;
+        }
+        var Q2 = $('#Q2').val();
+        if (isNullOrEmpty(Q2)) {
+            //todo message
+            return;
+        }
+        var data = {
+            "title": title,
+            "body": body,
+            Q1A: Q1A, Q1B: Q1B, Q1C: Q1C, Q1D: Q1D, Q1Answer: Q1Answer,
+            Q2A: Q2A, Q2B: Q2B, Q2C: Q2C, Q2D: Q2D, Q2Answer: Q2Answer,
+            Q3A: Q3A, Q3B: Q3B, Q3C: Q3C, Q3D: Q3D, Q3Answer: Q3Answer,
+            Q4A: Q4A, Q4B: Q4B, Q4C: Q4C, Q4D: Q4D, Q4Answer: Q4Answer,
+            Q1:Q1,Q2:Q2,Q3:Q3,Q4:Q4
+        }
+
+        $.ajax({
+            type: 'POST',
+            url: "@Url.Action("AddExam", "Home")",
+            data: data,
+            success: function (jsondata) {
+                if (jsondata.success) {
+                    window.location.href = "@Url.Action("Index","Home")"
+                }
+                else {
+                     ShowMessage("Hata, Sobra tekrar deneyiniz", "Hata", false); 
+                }
+            }
+        });
+
+
+    }
+    function isNullOrEmpty(item) {
+        if (item == undefined || item == null || item == "") {
+            ShowMessage("Hata, Lütfen boş Alan Bırakmayınız!", "Hata", false); 
+            item.focus();
+            return true;
+        }
+        return false;
+    }
+</script>

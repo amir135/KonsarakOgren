@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Areas/Admin/Views/Shared/_layout.cshtml";
+}
+
+
+<div class="card" style="margin:10px">
+    <div class="card-header">
+        <h3 class="card-title">Sınavlar</h3>
+        <input id="OrgID" type="hidden" />
+        <div class="card-tools">
+            <a href="@Url.Action("NewExam","Home")" class="btn btn-primary">Sınav ekle</a>
+        </div>
+    </div>
+    <div class="card-body p-0">
+        <div class="col-12" style="margin:10px">
+            <table id="tblExamList" class="display responsive ">
+                <thead>
+                    <tr>
+                        <th style="width:5%">#</th>
+                        <th style="width:55%">Sınav başlığı</th>
+                        <th style="width:25%">Tarih</th>
+                        <th style="width:5%"></th>
+
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <!-- /.card-body -->
+</div>
+<script>
+    $(document).ready(function () {
+        loadDataMerchants();
+    });
+    function loadDataMerchants() {
+
+
+        table = $("#tblExamList").DataTable({
+            "scrollX": false,
+            sDom: 'lrtip',
+            orderCellsTop: true,
+            fixedHeader: true,
+            "pageLength": 10,
+            "processing": true, // for show progress bar
+            "serverSide": true, // for process server side
+            "filter": true, // this is for disable filter (search box)
+            "orderMulti": false, // for disable multiple column at once
+            "order": [2, 'asc'],
+            "ajax": {
+                "url": '@Url.Action("LoadExams","Home")',
+                "type": "POST",
+                "datatype": "json"
+            },
+            "columnDefs":
+                [{
+                    "targets": [3],
+                    "visible": true,
+                    "searchable": false
+                }],
+            "columns": [
+                { "data": "id", "name": "Id", "autoWidth": true },
+                { "data": "title", "name": "Title", "autoWidth": true },
+                { "data": "dateCreated", "name": "DateCreated", "autoWidth": true },
+                {
+
+                    "render": function (data, type, full, meta) {
+
+                        return "<a href='@Url.Action("DeleteExam","Home")?id=" + full.id +"' class='btn btn-info btn-sm' data-title='Delete' >Delete</a>";
+                    },
+                   // className: "dt-body-right"
+                },
+
+            ]
+
+        });
+    }
+</script>

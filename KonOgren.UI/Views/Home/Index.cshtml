@@ -1,0 +1,64 @@
+﻿
+@model List<KonOgren.Domain.Model.Exam>
+@{ ViewData["Title"] = "Home Page";
+    ViewData["page"] = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+
+}
+
+<h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-2">
+    Lütfen Bir Sınav Seçiniz
+</h2>
+
+<div class="table-wrapper">
+
+
+    <div class="container">
+        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap4 no-footer">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <table id="tblExamList" class="display responsive ">
+                        <thead>
+                            <tr>
+                                <th style="width:5%">#</th>
+                                <th style="width:55%">Sınav başlığı</th>
+                                <th style="width:25%">Tarih</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td><a href="@Url.Action("StartExam","Home")?id=@item.Id">@item.Title</a></td>
+                                <td>@item.DateCreated</td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div><div class="row"><div class="col-md-5"><div class="dataTables_info display-7" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 4 entries</div></div><div class="col-md-7"></div></div>
+
+        </div>
+    </div>
+    <div class="container table-info-container">
+
+    </div>
+</div>
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+        loadDataMerchants();
+    });
+    function loadDataMerchants() {
+
+
+        table = $("#tblExamList").DataTable();
+    }
+</script>
